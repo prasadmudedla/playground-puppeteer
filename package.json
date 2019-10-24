@@ -1,17 +1,21 @@
 {
-  "name": "puppeteer-hello",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Prasad Mudedla",
-  "license": "ISC",
-  "devDependencies": {
-    "puppeteer": "^1.20.0"
-  },
-  "dependencies": {
-    "node": "^12.12.0"
-  },
-  "description": ""
+    "name": "puppeteer-hello",
+    "version": "1.0.0",
+    "main": "index.js",
+    "jest": {
+        "preset": "jest-puppeteer"
+    },
+    "scripts": {
+        "test": "jest",
+        "testScrapping": "node index.js",
+        "testSearch": "node searchGoogle.js"
+    },
+    "author": "Prasad Mudedla",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^24.9.0",
+        "jest-puppeteer": "^4.3.0",
+        "puppeteer": "^1.20.0"
+    },
+    "description": "Hello to the Puppeteer World"
 }
